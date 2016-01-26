@@ -1,6 +1,12 @@
 {
-    "name": "Better Ini",
+    "name": "sp4ceb4r/better-ini",
     "description": "A better ini.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jacob Schofield"
+        }
+    ],
     "require-dev": {
         "phpunit/phpunit": "^5.1"
     },
