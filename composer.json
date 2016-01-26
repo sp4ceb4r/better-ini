@@ -1,0 +1,12 @@
+{
+    "name": "Better Ini",
+    "description": "A better ini.",
+    "require-dev": {
+        "phpunit/phpunit": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BetterIni\\": "src/BetterIni"
+        }
+    }
+}

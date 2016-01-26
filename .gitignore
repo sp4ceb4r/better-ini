@@ -1,0 +1,10 @@
+
+.idea
+
+/**/vendor/*
+
+.*
+*.swp
+
+!.gitignore
+!.gitkeep

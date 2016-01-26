@@ -1,0 +1,4 @@
+BetterIni
+====
+
+A better ini.
