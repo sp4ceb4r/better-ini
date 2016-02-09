@@ -12,7 +12,7 @@ class Ini
     const SPLIT_PATTERN = '/ ?= ?/';
     const KEY_PATTERN = '/^[a-zA-Z]\w+(?:\[\])?$/';
     const ARRAY_KEY_PATTERN = '/^[a-zA-Z]\w+\[(?:(?<array_key>[^\]]+))?\]$/';
-    const HEADER_PATTERN = '/^\[(?<header>[a-zA-Z][\w:.]+)\]$/';
+    const HEADER_PATTERN = '/^\[(?<header>[a-zA-Z][^\]]+)\]$/';
     const QUOTED_TEXT_PATTERN = '/^((?<!\\\)[\'"])([^\1]+)\1$/';
     const ESCAPED_QUOTE_PATTERN = '/\\\([\'"])/';
     const QUOTE_CHARS = "'\"";

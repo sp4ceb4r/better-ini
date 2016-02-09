@@ -94,4 +94,15 @@ class IniTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('abc1', $config->get('section.key'));
         $this->assertEquals('def2', $config->get('section.another'));
     }
+
+    public function test_hyphenated_sections()
+    {
+        $config = new Ini(__DIR__ . '/../resources/hyphens.ini');
+
+        $this->assertCount(2, $config->get());
+        $this->assertEquals(['key' => 'this'], $config->get('section'));
+        $this->assertEquals(['key' => 'that'], $config->get('section-two'));
+        $this->assertEquals('this', $config->get('section.key'));
+        $this->assertEquals('that', $config->get('section-two.key'));
+    }
 }
